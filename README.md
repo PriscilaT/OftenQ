@@ -7,3 +7,8 @@
 Um quiz sobre qualquer coisa, pode criar salas dos assuntos, perguntas anônimas e os criadores das salas respondem. 
 
 #### Coisas que aprendi:
+
+1rem = 16px
+rem é mais usado, pois ajuda a ser resposivo
+
+font-size: (mínimo, padrão, máximo);
