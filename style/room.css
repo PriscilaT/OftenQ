@@ -47,6 +47,8 @@
     border: .2rem solid var(--azulIcone);
     border-radius: 0 .9rem .9rem .9rem ;
     padding: 1.6rem;
+
+    margin-bottom: 1.6rem;
 }
 
 #question-form form textarea {
