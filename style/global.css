@@ -11,12 +11,14 @@ html {
     --azulIcone: #02a1f9;
     --verdeQuiz: #49d88b;
     --background: #F5FAFF;
+    --yellowQuiz: #ffb332;
     font-size: 62.5%;
 }
 
 body {
     height: 100vh;
     width: 100vw;
+    display: flex;
     background-color: var(--background);
 }
 
@@ -58,11 +60,11 @@ input, button, .button {
 button, .button {
     font-family: 'Poppins';
     font-weight: 500;
-    line-height: 0;
+    line-height: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--azulIcone);
+    background: var(--yellowQuiz);
     color: white;
     cursor: pointer;
     transition: filter .2s;
@@ -96,5 +98,5 @@ button.outlined,
 .button.outlined {
     background: white;
     color: var(--azulIcone);
-    border: .2rem solid var(--azulIcone);
+    border: .2rem solid var(--yellowQuiz);
 }
