@@ -12,6 +12,10 @@ html {
     --verdeQuiz: #49d88b;
     --background: #F5FAFF;
     --yellowQuiz: #ffb332;
+    --azulQuiz: #8dd2f7;
+    --gray: #eaecf2;
+    --white: #fff;
+    --red: rgb(184, 48, 48);
     font-size: 62.5%;
 }
 
@@ -71,6 +75,24 @@ button, .button {
 
 }
 
+
+/* ***** Buttons modal ***** */
+
+button.red,
+.button.red {
+    background: var(--red);
+    color: var(--white);
+}
+
+button.grey,
+.button.grey {
+    background: var(--gray);
+    color: var(--azulIcone);
+
+}
+
+/* ***** Header ***** */
+
 .content header {
     width: 80%;
     margin: 3.5rem auto;
@@ -88,7 +110,7 @@ button:hover, .button:hover {
     filter: brightness(1.2);
 }
 
-button > img
+button > img,
 .button > img {
     margin-right : 7rem;
     width: 2rem;
