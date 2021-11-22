@@ -26,7 +26,15 @@ header {
 
 #bg {
     grid-area: left;
-    background: url('/assets/quiz.png') no-repeat top/contain;
+    /* background: url('/assets/quiz.png') no-repeat top/contain; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bg img{
+    width: 60%;
+    
 }
 
 main {
@@ -50,6 +58,7 @@ main h2 {
 input, button, .button {
     border: .2rem solid var(--yellowQuiz);
     padding: 0 1.6rem;
+    outline: none;
 }
 
 input, button, .button {
