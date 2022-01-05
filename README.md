@@ -9,6 +9,19 @@
 
 Um quiz sobre qualquer coisa, pode criar salas dos assuntos, perguntas anônimas e os criadores das salas respondem. 
 
+
+#### Rodar o projeto
+
+No terminal 
+
+```
+npm start
+```
+
+
+
+
+
 #### Coisas que aprendi:
 
 1rem = 16px
@@ -26,3 +39,6 @@ clip-path: circle();
 Fontes:
 https://fonts.google.com/
 
+
+ejs é resposavel pelo layout 
+por isso precisa configurar
