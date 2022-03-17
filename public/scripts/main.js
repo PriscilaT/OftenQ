@@ -19,6 +19,8 @@ deleteButtons.forEach( button => {
 })
 
 function handleClick(event, check = true){
+    event.preventDefault()
+
     const text = check ? "Marcar como lida" : "Excluir"
 
     modalTitle.innerHTML = `${text} esta pergunta`
