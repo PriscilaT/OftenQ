@@ -9,4 +9,3 @@ route.get('/create-room', (req, res)  => res.render("create-room"))
 
 module.exports = route
 
-teste
