@@ -19,9 +19,6 @@ npm start
 ```
 
 
-
-
-
 #### Coisas que aprendi:
 
 1rem = 16px
