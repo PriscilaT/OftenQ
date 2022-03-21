@@ -19,9 +19,6 @@ npm start
 ```
 Roda localmente na porta: http://127.0.0.1:3000/
 
-
-
-
 #### Coisas que aprendi:
 
 1rem = 16px
