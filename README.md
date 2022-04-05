@@ -17,7 +17,7 @@ No terminal
 ```
 npm start
 ```
-
+Roda localmente na porta: http://127.0.0.1:3000/
 
 #### Coisas que aprendi:
 

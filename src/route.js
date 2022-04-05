@@ -9,5 +9,7 @@ route.post('/room/:room/:question/:action', (req, res) => res.render())
 
 route.post()
 
+//route.get('/room/:room/:question/:action', (req, res)  => res.render("exemplo", {req}))
+
 
 module.exports = route
