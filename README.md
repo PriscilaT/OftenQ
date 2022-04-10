@@ -1,9 +1,7 @@
 ### Projeto da Rocketseat Discover
 ###### Por Priscila Teodório
 
- Icones: https://www.flaticon.com/free-icons
- https://fontawesome.com/v5.15/icons?d=gallery&p=1 
- https://feathericons.com/
+ 
 
 #### Descrição do projeto:
 
@@ -32,10 +30,18 @@ https://bennettfeely.com/
 Exemplo do próprio css:
 clip-path: circle(); 
 
+ejs é resposavel pelo layout 
+por isso precisa configurar
+
+#### Útil
+
 
 Fontes:
 https://fonts.google.com/
 
-
-ejs é resposavel pelo layout 
-por isso precisa configurar
+Icones: https://www.flaticon.com/free-icons
+ https://fontawesome.com/v5.15/icons?d=gallery&p=1 
+ https://feathericons.com/
+ 
+#### Mais sobre a estrutura:
+Banco de dados usado: SQLite
