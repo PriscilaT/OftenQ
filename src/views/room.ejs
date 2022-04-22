@@ -32,8 +32,8 @@
             </a>
 
             <div class="buttons">
-                <div class="button outlined" id="room-id" data-id="323243">
-                    #323243
+                <div class="button outlined" id="room-id" data-id="<%= roomId %>">
+                    #<%= roomId %>
                     <!-- <img src="" alt="Copiar número da sala"> -->
                 </div>
                 <a href="#" class="button">
@@ -47,8 +47,7 @@
         <main>
             <section id="question-form">
                 <h2>Faça sua pergunta</h2>
-
-                <form action="#">
+                <form action="/question/create/<%= roomId %>" method="POST">
                     <label class="sr-only" for-id="question">O que você quer perguntar?</label>
                     <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
 
@@ -66,100 +65,53 @@
             <section id="question"> 
                 <h2 class="sr-only">Perguntas da comunidade</h2>
                 <div class="questions">
-                    <div class="question-wrapper">
-                        <div class="question-content">
-                            <div class="user">
 
-                            </div>
-                            <div class="question">
-                                <p>Qual a diferença?</p>
-                            </div>
-                        </div>
-                        <div class="actions">
-                            <a href="#" class="check" data-id="2">
-                                <img src="" alt="Marcar como lida">
-                            </a>
-                            <a href="#" class="delete" data-id="2">
-                                <img src="" alt="Excluir">
-                            </a>
-                        </div>
-                        
-                    </div>
+                    <% questions.forEach(question => { %>
 
-                    <div class="question-wrapper">
-                        <div class="question-content">
-                            <div class="user">
+                        <div class="question-wrapper">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="/images/user.svg" alt="">
+                                </div>
+                                <div class="question">
+                                    <p><%= question.title %></p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="check" data-id="<%= question.id %>">
+                                    <img src="" alt="Marcar como lida">
+                                </a>
+                                <a href="#" class="delete" data-id="<%= question.id %>">
+                                    <img src="" alt="Excluir">
+                                </a>
+                            </div>
+                            
+                        </div>
 
-                            </div>
-                            <div class="question">
-                                <p>Qual a diferença principal?</p>
-                            </div>
-                        </div>
-                        <div class="actions">
-                            <a href="#" class="check" data-id="3">
-                                <img src="" alt="Marcar como lida">
-                            </a>
-                            <a href="#" class="delete" data-id="3">
-                                <img src="" alt="Excluir">
-                            </a>
-                        </div>
-                        
-                    </div>
+                    <% }); %>
 
-                    <div class="question-wrapper">
-                        <div class="question-content">
-                            <div class="user">
+                    <% questionsRead.forEach(questionRead => { %>
 
+                        <div class="question-wrapper read">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="/images/user.svg" alt="">
+                                </div>
+                                <div class="question">
+                                    <p><%= questionRead.title %></p>
+                                </div>
                             </div>
-                            <div class="question">
-                                <p>Qual a diferença entre?</p>
+                            <div class="actions">
+                                <a href="#" class="delete" data-id="<%= questionRead.id %>">
+                                    <img src="" alt="Excluir">
+                                </a>
                             </div>
+                            
                         </div>
-                        <div class="actions">
-                            <a href="#" class="check" data-id="4">
-                                <img src="" alt="Marcar como lida">
-                            </a>
-                            <a href="#" class="delete" data-id="4">
-                                <img src="" alt="Excluir">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="question-wrapper">
-                        <div class="question-content">
-                            <div class="user">
 
-                            </div>
-                            <div class="question">
-                                <p>O que é?</p>
-                            </div>
-                        </div>
-                        <div class="actions">
-                            <a href="#" class="check" data-id="5">
-                                <img src="" alt="Marcar como lida">
-                            </a>
-                            <a href="#" class="delete" data-id="5">
-                                <img src="" alt="Excluir">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="question-wrapper read">
-                        <div class="question-content">
-                            <div class="user">
+                    <% }); %>
 
-                            </div>
-                            <div class="question">
-                                <p>Por quê?</p>
-                            </div>
-                        </div>
-                        <div class="actions">
-                            <a href="#" class="check" data-id="1">
-                                <img src="" alt="Marcar como lida">
-                            </a>
-                            <a href="#" class="delete" data-id="1">
-                                <img src="" alt="Excluir">
-                            </a>
-                        </div>
-                    </div>
+                 
                 </div>
 
             </section>
