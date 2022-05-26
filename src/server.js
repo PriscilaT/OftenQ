@@ -14,6 +14,8 @@ server.use(express.urlencoded({extended: true}))
 
 server.use(route)
 
-server.listen(3000, () => console.log('Rodando'))
+// server.listen(process.env.PORT || 3000, () => console.log('Rodando'))
 
-  
+server.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d", this.address().port);
+});
