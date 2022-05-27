@@ -61,7 +61,7 @@ input, button, .button {
     outline: none;
 }
 
-input, button, .button {
+input, button, .button{
     width: 100%;
     margin-bottom: 1.8rem;
 }
